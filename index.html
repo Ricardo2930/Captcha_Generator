@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body class="grid place-content-center h-screen text-white text-center">
+    <main class="container bg-gray-900 p-5 rounded-md">
+      <h1 class="text-3xl font-bold">Captcha Generator</h1>
+      <section class="captcha grid gap-2">
+        <img src="" alt="" />
+        <h2
+          class="captcha-text text-4xl font-bold text-black text-center rounded-md p-5 my-2 line-through bg-[url('https://www.codeproject.com/KB/scripting/CreateCaptcha/1.JPG')]"
+        ></h2>
+      </section>
+
+      <section class="box-buttons grid gap-2">
+        <input
+          class="input-captcha p-3 outline-none text-black rounded-md my-5"
+          type="text"
+          placeholder="Enter the captcha"
+        />
+        <button class="check-btn bg-green-600 py-2 rounded-md font-bold">
+          Check Captcha
+        </button>
+        <button class="generate-btn bg-blue-600 py-2 rounded-md font-bold">
+          Generate Captcha
+        </button>
+        <p class="message text-center mt-2"></p>
+      </section>
+    </main>
+  </body>
+  <script src="./app.js"></script>
+</html>
